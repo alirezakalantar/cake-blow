@@ -83,4 +83,11 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.log("getUserMedia not supported on your browser!");
   }
+  // --- اضافه کردن 21 کندل به صورت خودکار ---
+for (let i = 0; i < 21; i++) {
+  addCandle(
+    Math.random() * 250 + 30,
+    Math.random() * 120 + 20
+  );
+}
 });
